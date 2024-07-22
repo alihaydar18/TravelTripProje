@@ -1,0 +1,104 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<body>
+<div class="header-banner">
+<div class="wrap">
+	<div class="banner">
+		<div class="indent">
+                <h2 class="indent-left margin-bot" style="margin-left:80px">Tatil ve Seyahat Bloğum</h2>		
+				<div class="banner-left">
+				   	<div class="con-text">
+							<div class="grid1-img">
+								<img src="~/images/glass.png" alt="">
+							</div>
+							<div class="grid1-desc">
+								<p>Restoranlar</p>
+							</div>
+							<div class="clear"></div>
+					</div>
+					<div class="con-text">
+							<div class="grid1-img">
+								<img src="~/images/flight.png" alt="">
+							</div>
+							<div class="grid1-desc">
+								<p>Uçuşlar</p>
+							</div>
+							<div class="clear"></div>
+					</div>
+	<div class="con-text">
+			<div class="grid1-img">
+				<img src="~/images/group.png" alt="">
+			</div>
+			<div class="grid1-desc">
+				<p>Yapılacak Şeyler</p>
+			</div>
+			<div class="clear"></div>
+	</div>
+	<div class="con-text">
+			<div class="grid1-img">
+				<img src="~/images/key.png" alt="">
+			</div>
+			<div class="grid1-desc">
+				<p>Araba-Ev Kiralama</p>
+			</div>
+			<div class="clear"></div>
+	</div>
+   <div class="clear"></div>
+</div>
+<div class="header_bottom_right_images">
+
+ <div class="slider">
+     
+	    <ul class="rslides" id="slider1">
+        @foreach (var x in Model)
+        {
+            <li><img src="@x.BlogImage" style="width:650px;height:365px;" alt=""></li>
+        }
+        </ul>
+        
+    </div>
+	       </div>                                        
+	</div>
+    <div class="clear"></div>
+      </div>
+      	<div class="clear"></div>
+      </div>
+      </div>
+     <div class"content">
+      	<div class="wrap">
+      		<div class="wrapper">
+      	<div class="con-top">
+      		<h3>Tatil Seyahat Bloğuma Hoşgeldiniz!</h3>
+      		<p>Bu projeye 9 temmuz 2024 tarihinde başladım. Amacım Mvc teknolojisini kullanarak öğrendiğim bütün bilgileri pekiştirmek.
+                  Aynı zamanda gezip gördüğüm  sizlerinde görmesini istediğim yerleri ve aynı zamanda memleketim Hatay'dan yerler ile depremin ardından güzel Hatay'ımızın unutulmaması adına bloglarımı siteye ekliyor olacağım. Her ne kadar Mvc üzerinden kurduğum dinamik
+                  web sitesi projesi olsa da sitenin içerisindeki verileri veri tabanından çekmekteyim. Bunun sayesinde sql entity framework bilgimi de
+                  pekiştirmiş olmaktayım. Umarım beğenirsiniz sağlıklı günler dilerim...
+              </p>
+      	</div>
+          @Html.Partial("Partial1")
+      		<div class="grids">
+      	<div class="box1">
+              @Html.Partial("Partial2")
+			  @Html.Partial("Partial3")
+                                                      		
+        <div class="clear"></div>      
+      	</div
+     </div>
+      </div>
+      </div></div>
+</body>
+</html>
+

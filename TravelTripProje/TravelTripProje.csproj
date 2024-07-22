@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\blogcss\bootstrap.css" />
+    <None Include="wwwroot\blogcss\style.css" />
+    <None Include="wwwroot\blogimages\avatar.png" />
+    <None Include="wwwroot\blogimages\icon3.png" />
+    <None Include="wwwroot\blogimages\logo.jpg" />
+    <None Include="wwwroot\blogimages\man.jpg" />
+    <None Include="wwwroot\blogimages\more.png" />
+    <None Include="wwwroot\blogimages\post1.jpg" />
+    <None Include="wwwroot\blogimages\post2.jpg" />
+    <None Include="wwwroot\blogimages\post3.jpg" />
+    <None Include="wwwroot\blogimages\search.png" />
+    <None Include="wwwroot\blogjs\easing.js" />
+    <None Include="wwwroot\blogjs\jquery.min.js" />
+    <None Include="wwwroot\blogjs\move-top.js" />
+    <None Include="wwwroot\css\slider.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\images\about_banner.jpg" />
+    <None Include="wwwroot\images\arrows.png" />
+    <None Include="wwwroot\images\but.png" />
+    <None Include="wwwroot\images\contact.png" />
+    <None Include="wwwroot\images\dest_banner.jpg" />
+    <None Include="wwwroot\images\flight.png" />
+    <None Include="wwwroot\images\glass.png" />
+    <None Include="wwwroot\images\group.png" />
+    <None Include="wwwroot\images\head_bg.jpg" />
+    <None Include="wwwroot\images\head_bot.gif" />
+    <None Include="wwwroot\images\img1.jpg" />
+    <None Include="wwwroot\images\img2.jpg" />
+    <None Include="wwwroot\images\img3.jpg" />
+    <None Include="wwwroot\images\img4.jpg" />
+    <None Include="wwwroot\images\key.png" />
+    <None Include="wwwroot\images\link1-bg.gif" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\images\pic.jpg" />
+    <None Include="wwwroot\images\pic1.jpg" />
+    <None Include="wwwroot\images\pic10.jpg" />
+    <None Include="wwwroot\images\pic2.jpg" />
+    <None Include="wwwroot\images\pic3.jpg" />
+    <None Include="wwwroot\images\pic4.jpg" />
+    <None Include="wwwroot\images\pic5.jpg" />
+    <None Include="wwwroot\images\pic6.jpg" />
+    <None Include="wwwroot\images\pic7.jpg" />
+    <None Include="wwwroot\images\pic8.jpg" />
+    <None Include="wwwroot\images\pic9.jpg" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\responsiveslides.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+
+    <PackageReference Include="Microsoft.AspNetCore.CookiePolicy" Version="2.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

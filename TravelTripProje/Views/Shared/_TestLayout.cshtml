@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        .header-bottom {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center; /* Yatayda ortala */
+        }
+
+            .header-bottom #nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex; /* Yatayda sırala */
+                justify-content: center; /* Yatayda ortala */
+            }
+
+                .header-bottom #nav li {
+                    margin-right: 20px; /* Sağ boşluk */
+                }
+
+                    .header-bottom #nav li:last-child {
+                        margin-right: 0; /* Son öğe için sağ boşluğu kaldır */
+                    }
+
+    </style>
+
+    <title>Free Easy-Trip Website Template | Home :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+    <link href="~/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/responsiveslides.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="con-right">
+                <div class="grid1-l-desc">
+                    <p>MVC ve Entity Framework kullanarak oluşturulmuş bir blog sitesidir.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="wrap">
+            <ul id="nav">
+                <li><a href="/Default/Index">Anasayfa</a></li>
+                <li><a class="hsubs" href="/About/Index">Hakkımızda</a></li>
+                <li><a class="hsubs" href="/Blog/Index">Blogum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        @RenderBody()
+
+        <div class="footer-bottom">
+            <div class="wrap">
+                <div class="copy">
+                    <p>&copy; 2024 TravelTripProje. Tüm hakları saklıdır | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

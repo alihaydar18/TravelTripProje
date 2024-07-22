@@ -1,0 +1,40 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Blog>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="padding1">
+    <h4>Tavsiye Ettiğim Yerler</h4>
+    <div class="box-left">
+        @foreach (var x in Model)
+        {
+            if (x.ID <= 4)
+            {
+                <div class="bot-img">
+                    <img src="@x.BlogImage" alt="" style="width:120px; height:80px;" />
+                </div>
+                <div class="bot-desc">
+                    <p>@x.Aciklama.Substring(0, 80) </p>
+                </div>
+                <div class="clear"></div>
+            }
+
+        }
+    </div>
+    @foreach (var y in Model)
+    {
+        if (y.ID >= 5 && y.ID <= 9)
+        {
+            <div class="box1-left">
+                <div class="bot-img">
+                    <img src="@y.BlogImage" alt="" style="width:120px; height:80px;" />
+                </div>
+                <div class="bot-desc1">
+                    <p>@y.Aciklama.Substring(0, 80) </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        }
+
+    }
+</div>

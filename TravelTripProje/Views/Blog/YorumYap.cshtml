@@ -1,0 +1,15 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="content-form">
+    <h3>Bir Yorum Yapın</h3>
+
+    <form method="post"asp-action="YorumYap" asp-controller="Blog">
+        <input type="text" placeholder="ID" required name="BlogID" value="@ViewBag.deger" required disabled />
+        <input type="text" placeholder="Kullanıcı Adı" name=KullaniciAdi required />
+        <input type="text" placeholder="Mail Adresi"name=Mail required />
+        <textarea placeholder="Yorum" name=Yorum></textarea>
+        <input type="submit" value="Gönder" />
+    </form>
+</div>
